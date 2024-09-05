@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, <span id="username-display"></span></h1>
+        <h2>Hospital Bed Availability</h2>
+        <button id="logout">Logout</button>
+        <div style="height: 20px;"></div>
+        <div id="categories">
+            <div class="category">
+                <button class="dropdown-btn">
+                    <span class="category-text">
+                        ICU Beds
+                    </span>
+                </button>
+                <ul class="subcategory-list">
+                    <li data-subcategory="accident-emergency">Accident & Emergency Beds</li>
+                    <li data-subcategory="cardiology">Cardiology (Cardiac Care Unit)</li>
+                    <li data-subcategory="gastro-surgery">Gastro Surgery</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <button class="dropdown-btn">
+                    <span class="category-text">
+                        Speciality Ward Beds
+                    </span>
+                </button>
+                <ul class="subcategory-list">
+                    <li data-subcategory="neurology-ward">Neurology Ward Beds</li>
+                    <li data-subcategory="eye-ward">Eye Care Ward Beds</li>
+                    <li data-subcategory="dermatology-ward">Dermatology</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <button class="dropdown-btn">
+                    <span class="category-text">
+                        General Ward
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div id="bed-details">
+            <h2 id="subcategory-title"></h2>
+            <table id="bed-details-table">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Hospital Name</th>
+                        <th>With Ventilator</th>
+                        <th>Last Update</th>
+                        <th>Without Ventilator</th>
+                        <th>Last Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

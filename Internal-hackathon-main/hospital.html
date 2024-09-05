@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bed Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="div-doctor">
+                <img src="images/doctor.jpg" class="doctor-img" alt="stethoscope" width="60" height="60">
+            </div>
+            <div class="div-heading">
+                <h1 class="heading-hospital">Hospital Bed Availability Status</h1>
+            </div>
+            <div class="div-login">
+                <a href="login.html" class="a-login" target="_blank"><button class="login">Login</a></button>
+            </div>
+            <div class="div-signup">
+                <button class="signup">Sign-up</button>
+            </div>
+        </div>
+        <div class="all">
+           
+            <div class="home">
+                <a href="#" class="hos-home">Home</a>
+            </div>
+            <div class="about">
+                <a href="#" class="hos-about">About</a>
+            </div>
+            <div class="contact">
+                <a href="#" class="hos-contact">Contact</a>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">More &#x2193</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filter Options</h2>
+            <label for="hospitalSelect">Select Hospital:</label>
+            <select id="hospitalSelect">
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <label for="bedTypeSelect">Select Bed Type:</label>
+            <select id="bedTypeSelect">
+                <option value="criticalWithoutVentilator">Critical Bed (Without Ventilator)</option>
+                <option value="criticalWithVentilator">Critical Bed (With Ventilator)</option>
+                <option value="nonCritical">Non-Critical Bed</option>
+            </select>
+
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section class="results">
+            <h2>Bed Availability Results</h2>
+            <table id="bedTable">
+                <thead>
+                    <tr>
+                        <th>Hospital Name</th>
+                        <th>Critical Bed (Without Ventilator)</th>
+                        <th>Critical Bed (With Ventilator)</th>
+                        <th>Non-Critical Bed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Us: <a href="mailto:info@example.com" class="contactus">ltce@college.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
